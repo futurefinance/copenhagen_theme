@@ -4348,7 +4348,12 @@ body .navigation-main .dropdown-toggle::after {
 
 @media screen and (min-width: 1023px) {
 body footer.site-footer .footer-title {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
+}
+
+
+.hero .page-heading {
+  margin-bottom: 30px;
 }
