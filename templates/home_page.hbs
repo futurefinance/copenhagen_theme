@@ -1,6 +1,6 @@
 <section class="section hero">
   <div class="hero-inner">
-    <h1>{{settings.main_heading}}<h1>
+    <h1 class="page-heading">{{settings.main_heading}}<h1>
     {{search submit=false instant=settings.instant_search class='search search-full'}}
   </div>
 </section>
@@ -9,7 +9,7 @@
   <section class="section knowledge-base">
       {{#if promoted_articles}}
         <section class="articles">
-          <h3>{{t 'promoted_articles'}}</h3>
+          <h3>Popular articles</h3>
           <ul class="article-list promoted-articles">
             {{#each promoted_articles}}
               <li class="promoted-articles-item">
