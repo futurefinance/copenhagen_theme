@@ -151,7 +151,7 @@
     }, {
       "identifier": "main_heading",
       "type": "text",
-      "description": "Main page heading displayed in the hero section",
+      "description": "main_page_heading_displayed_in_the_hero_section",
       "label": "page_main_title",
       "value": true
     }]
