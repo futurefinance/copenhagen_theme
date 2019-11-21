@@ -149,10 +149,11 @@
       "label": "recent_activity_label",
       "value": true
     }, {
-       "identifier": "main_heading",
-       "type": "text",
-       "description": "Main page heading displayed in the hero section",
-       "label": "Page main title"
+      "identifier": "main_heading",
+      "type": "text",
+      "description": "Main page heading displayed in the hero section",
+      "label": "page_main_title",
+      "value": true
     }]
   }, {
     "label": "article_page_group_label",
