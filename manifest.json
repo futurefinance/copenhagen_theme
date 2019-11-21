@@ -153,7 +153,7 @@
       "type": "text",
       "description": "main_page_heading_displayed_in_the_hero_section",
       "label": "page_main_title",
-      "value": true
+      "value": ""
     }]
   }, {
     "label": "article_page_group_label",
