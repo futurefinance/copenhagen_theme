@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [{
@@ -227,5 +227,15 @@
       "label": "follow_topic_label",
       "value": true
     }]
-  }]
+  },
+    {
+      "label": "Other",
+      "variables": [{
+        "identifier": "main_heading",
+        "type": "text",
+        "description": "Main page heading displayed in the hero section",
+        "label": "Page main title",
+        "value": true
+      }]
+    }]
 }

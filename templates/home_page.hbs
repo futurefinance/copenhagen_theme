@@ -1,11 +1,31 @@
 <section class="section hero">
   <div class="hero-inner">
+    <h1>{{settings.main_heading}}<h1>
     {{search submit=false instant=settings.instant_search class='search search-full'}}
   </div>
 </section>
 
 <div class="container">
   <section class="section knowledge-base">
+      {{#if promoted_articles}}
+        <section class="articles">
+          <h3>{{t 'promoted_articles'}}</h3>
+          <ul class="article-list promoted-articles">
+            {{#each promoted_articles}}
+              <li class="promoted-articles-item">
+                  <a href="{{url}}">
+                    {{title}}
+
+                    {{#if internal}}
+                      <span class="icon-lock" title="{{t 'internal'}}"></span>
+                    {{/if}}
+                  </a>
+              </li>
+            {{/each}}
+          </ul>
+        </section>
+      {{/if}}
+
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
@@ -33,24 +53,7 @@
       {{pagination}}
     </section>
 
-    {{#if promoted_articles}}
-      <section class="articles">
-        <h3>{{t 'promoted_articles'}}</h3>
-        <ul class="article-list promoted-articles">
-          {{#each promoted_articles}}
-            <li class="promoted-articles-item">
-                <a href="{{url}}">
-                  {{title}}
 
-                  {{#if internal}}
-                    <span class="icon-lock" title="{{t 'internal'}}"></span>
-                  {{/if}}
-                </a>
-            </li>
-          {{/each}}
-        </ul>
-      </section>
-    {{/if}}
   </section>
 
   {{#if help_center.community_enabled}}
