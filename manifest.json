@@ -161,7 +161,7 @@
       "label": "page_main_title_size_mobile",
       "value": 46,
       "min": 6,
-      "max": 40
+      "max": 80
     }, {
       "identifier": "main_heading_size_desktop",
       "type": "range",
