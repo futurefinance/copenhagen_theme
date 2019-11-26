@@ -64,5 +64,7 @@
   "follow_topic_label": "Follow",
   "follow_topic_description": "Users can follow a specific topic",
   "page_main_title": "Page Main Title",
-  "main_page_heading_displayed_in_the_hero_section": "Main page heading displayed in the hero section"
+  "main_page_heading_displayed_in_the_hero_section": "Main page heading displayed in the hero section",
+  "page_main_title_size": "Main title font-size",
+  "main_page_heading_size": "in pixels"
 }

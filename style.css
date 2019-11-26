@@ -4356,4 +4356,12 @@ body footer.site-footer .footer-title {
 
 .hero .page-heading {
   margin-bottom: 30px;
+  font-size: #{$main_heading_size_mobile}px;
+}
+
+@media screen and (min-width: 1170px) {
+
+  .hero .page-heading {
+    font-size: #{$main_heading_size_desktop}px;
+  }
 }
