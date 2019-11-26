@@ -159,17 +159,17 @@
       "type": "range",
       "description": "main_page_heading_size",
       "label": "page_main_title_size_mobile",
-      "value": "46",
-      "min": "6",
-      "max": "40"
+      "value": 46,
+      "min": 6,
+      "max": 40
     }, {
       "identifier": "main_heading_size_desktop",
       "type": "range",
       "description": "main_page_heading_size",
       "label": "page_main_title_size_desktop",
-      "min": "12",
-      "value": "70",
-      "max": "200"
+      "min": 12,
+      "value": 70,
+      "max": 200
     }]
   }, {
     "label": "article_page_group_label",
