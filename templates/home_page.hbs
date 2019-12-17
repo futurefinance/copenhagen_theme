@@ -13,13 +13,11 @@
           <ul class="article-list promoted-articles">
             {{#each promoted_articles}}
               <li class="promoted-articles-item">
-                  <a href="{{url}}">
-                    {{title}}
-
                     {{#if internal}}
-                      <span class="icon-lock" title="{{t 'internal'}}"></span>
+                       <a href="{{url}}">{{title}}<span class="icon-lock" title="{{t 'internal'}}"></span></a>
+                    {{else}}  
+                        <a href="{{url}}">{{title}}</a>
                     {{/if}}
-                  </a>
               </li>
             {{/each}}
           </ul>
@@ -33,7 +31,7 @@
             <li class="blocks-item">
               <a href='{{url}}' class="blocks-item-link">
                 <h4 class="blocks-item-title">{{name}}</h4>
-                <p class="blocks-item-description">{{excerpt description}}</p>
+                {{#if description }}<p class="blocks-item-description">{{excerpt description}}</p>{{/if}}
               </a>
             </li>
           {{else}}
@@ -43,7 +41,7 @@
                   <h4 class="blocks-item-title">
                     {{name}}
                   </h4>
-                  <p class="blocks-item-description">{{excerpt description}}</p>
+                  {{#if description }}<p class="blocks-item-description">{{excerpt description}}</p>{{/if}}
                 </a>
               </li>
             {{/each}}
@@ -52,8 +50,6 @@
       </ul>
       {{pagination}}
     </section>
-
-
   </section>
 
   {{#if help_center.community_enabled}}
@@ -68,8 +64,6 @@
   {{/if}}
 
   <section class="section home-section activity">
-    {{#if settings.show_recent_activity}}
-      {{recent_activity}}
-    {{/if}}
+    {{#if settings.show_recent_activity}}{{recent_activity}}{{/if}}
   </section>
 </div>
