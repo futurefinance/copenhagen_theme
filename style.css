@@ -4352,6 +4352,8 @@ body .navigation-main .dropdown-toggle::after {
 
 .home-section-heading {
   margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 1170px) {
@@ -4365,6 +4367,7 @@ body .navigation-main .dropdown-toggle::after {
   }
   .home-section-heading {
     margin-bottom: 24px;
+    font-size: 30px;
   }
 }
 
