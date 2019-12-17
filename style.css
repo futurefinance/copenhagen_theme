@@ -989,7 +989,6 @@ ul {
 
 .promoted-articles-item a {
   display: block;
-  border-bottom: 1px solid #ddd;
   padding: 15px 0;
   color: $text_color;
 }
@@ -4368,4 +4367,8 @@ body .navigation-main .dropdown-toggle::after {
 
 .site-header { 
   background-color: white;
+}
+
+.categories {
+  padding-top: 40px;
 }
