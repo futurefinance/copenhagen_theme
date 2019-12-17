@@ -1001,11 +1001,6 @@ ul {
   border: 0;
 }
 
-@media (min-width: 1024px) {
-  .promoted-articles-item:last-child a {
-    border-bottom: 1px solid #ddd;
-  }
-}
 
 /***** Community section in homepage *****/
 .community {
