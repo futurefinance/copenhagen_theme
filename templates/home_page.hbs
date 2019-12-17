@@ -6,26 +6,22 @@
 </section>
 
 <div class="container">
-  <section class="section knowledge-base">
-      {{#if promoted_articles}}
-        <section class="articles">
-          <h3>Popular articles</h3>
-          <ul class="article-list promoted-articles">
-            {{#each promoted_articles}}
-              <li class="promoted-articles-item">
-                    {{#if internal}}
-                       <a href="{{url}}">{{title}}<span class="icon-lock" title="{{t 'internal'}}"></span></a>
-                    {{else}}  
-                        <a href="{{url}}">{{title}}</a>
-                    {{/if}}
-              </li>
-            {{/each}}
-          </ul>
+<section class="section knowledge-base">
+{{#if promoted_articles}}
+  <section class="articles">
+    <h3 class="home-section-heading">Popular articles</h3>
+      <ul class="article-list promoted-articles">
+      {{#each promoted_articles}}
+      <li class="promoted-articles-item">
+          {{#if internal}}
+            <a href="{{url}}">{{title}}<span class="icon-lock" title="{{t 'internal'}}"></span></a>
+          {{else}}<a href="{{url}}">{{title}}</a>{{/if}}
+        </li>{{/each}}
+      </ul>
         </section>
       {{/if}}
-
     <section class="categories blocks">
-      <h3>Another Title</h3>
+      <h3 class="home-section-heading">Another Title</h3>
       <ul class="blocks-list">
         {{#each categories}}
           {{#if ../has_multiple_categories}}
