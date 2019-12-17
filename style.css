@@ -4338,7 +4338,6 @@ html[lang|="zh"] .search-results-description em {
 
 body header.site-header {
   position: relative;
-  background-color: #000f20;
 }
 
 body .navigation-main .dropdown-toggle::after {
@@ -4347,10 +4346,9 @@ body .navigation-main .dropdown-toggle::after {
 
 
 @media screen and (min-width: 1023px) {
-body footer.site-footer .footer-title {
-  margin-bottom: 0;
-}
-
+  body footer.site-footer .footer-title {
+    margin-bottom: 0;
+  }
 }
 
 
