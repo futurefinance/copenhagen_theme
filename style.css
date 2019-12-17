@@ -706,7 +706,7 @@ ul {
 
 .search input[type="search"] {
   border: 1px solid #ddd;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-sizing: border-box;
   color: #999;
   height: 40px;
@@ -4363,5 +4363,11 @@ body footer.site-footer .footer-title {
 
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
+    line-height 45px;
+    margin-bottom: 24px;
   }
+}
+
+.site-header { 
+  background-color: white;
 }
