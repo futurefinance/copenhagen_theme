@@ -972,7 +972,7 @@ ul {
 
 @media (min-width: 1024px) {
   .promoted-articles-item {
-    align-self: flex-end;
+    align-self: flex-start;
     flex: 0 0 auto;
     padding-right: 30px;
     width: 33%;
