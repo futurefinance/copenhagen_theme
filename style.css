@@ -4350,11 +4350,20 @@ body .navigation-main .dropdown-toggle::after {
   font-size: #{$main_heading_size_mobile}px;
 }
 
-@media screen and (min-width: 1170px) {
+.home-section-heading {
+  margin-bottom: 10px;
+}
 
+@media screen and (min-width: 1170px) {
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
     line-height 45px;
+    margin-bottom: 24px;
+  }
+  .promoted-articles-item a { 
+    padding: 0;
+  }
+  .home-section-heading {
     margin-bottom: 24px;
   }
 }
@@ -4366,3 +4375,4 @@ body .navigation-main .dropdown-toggle::after {
 .categories {
   padding-top: 40px;
 }
+
