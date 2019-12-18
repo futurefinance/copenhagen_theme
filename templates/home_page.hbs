@@ -4,80 +4,80 @@
     {{search submit=false instant=settings.instant_search class='search search-full'}}
   </div>
 </section>
-<div class="container">
-<section class="section knowledge-base home-content">
+
+
 {{#if promoted_articles}}
-  <section class="articles">
+<section class="articles homepage-section">
+  <div class="container">
     <h2 class="home-section-heading section-heading">{{settings.promoted_heading}}</h2>
-      <ul class="article-list promoted-articles">
+    <ul class="article-list promoted-articles">
       {{#each promoted_articles}}
       <li class="promoted-articles-item">
-          {{#if internal}}
-            <a href="{{url}}">{{title}}<span class="icon-lock" title="{{t 'internal'}}"></span></a>
-          {{else}}<a href="{{url}}">{{title}}</a>{{/if}}
-        </li>{{/each}}
-      </ul>
-        </section>
+        {{#if internal}}
+          <a href="{{url}}">{{title}}<span class="icon-lock" title="{{t 'internal'}}"></span></a>
+        {{else}}<a href="{{url}}">{{title}}</a>{{/if}}
+      </li>{{/each}}
+    </ul>
+  </div>
+</section>
+{{/if}}
+
+
+<section class="categories blocks homepage-section">
+  <div class="container">
+  <h2 class="section-heading home-section-heading">{{settings.categories_heading}}</h2>
+    <ul class="blocks-list">
+    {{~#each categories~}}
+      {{#if ../has_multiple_categories}}
+        <li class="blocks-item"><a href="{{url}}" class="blocks-item-link category-cta"><span>{{name}}</span></a></li>
+        {{else}}
+          {{~#each sections~}}
+            <li class="blocks-item"><a href="{{url}}" class="blocks-item-link"><span>{{name}}</span></a></li>
+          {{/each}}
       {{/if}}
-    <section class="categories blocks">
-      <h2 class="section-heading home-section-heading">{{settings.categories_heading}}</h2>
-      <ul class="blocks-list">
-        {{~#each categories~}}
-          {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link category-cta">
-                <span>{{name}}</span>
-              </a>
-            </li>
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span>{{name}}</span>
-                </a>
-              </li>
-            {{/each}}
-          {{/if}}
-        {{/each}}
-      </ul>
-      {{pagination}}
-    </section>
-  </section>
+    {{/each}}
+    </ul>
+  </div>
+</section>
 
-  <section class="homepage-section">
+
+<section class="homepage-section">
   <div class="container">
-        <h2 class="section-heading arrow">Contact us</h2>
-        <p>
-        Need to get in touch? 
-        Visit our Contact page.
-        Our helpful customer service team are contactable via <a href="https://futurefinance.com/contact/">email</a>, phone or post.
-  </p></div>
-  </section>
+    <h2 class="section-heading arrow">Contact us</h2>
+    <p>
+      Need to get in touch? 
+      Visit our Contact page.
+      Our helpful customer service team are contactable via <a href="https://futurefinance.com/contact/">email</a>, phone or post.
+    </p>
+  </div>
+</section>
 
-  <section class="homepage-section">
+
+<section class="homepage-section">
   <div class="container">
-        <h2 class="section-heading arrow">Complaints</h2>
-        <p>Our priority is to support our customers and give them
-          the best chance of reaching their full potential. 
-          If, for any reason, you have any concerns or complaints about our service,
-          we want to hear from you. 
-          Visit our <a href="https://futurefinance.com/contact/">Contact page</a> to find out how you can contact us by phone, email or post.
-  </p></div>
-  </section>
+    <h2 class="section-heading arrow">Complaints</h2>
+    <p>Our priority is to support our customers and give them
+      the best chance of reaching their full potential. 
+      If, for any reason, you have any concerns or complaints about our service,
+      we want to hear from you. 
+      Visit our <a href="https://futurefinance.com/contact/">Contact page</a> to find out how you can contact us by phone, email or post.
+    </p>
+  </div>
+</section>
 
 
-
-  {{#if help_center.community_enabled}}
-    <section class="section home-section community">
-      <h2>{{t 'community'}}</h2>
+{{#if help_center.community_enabled}}
+  <section class="section home-section community">
+     <h2>{{t 'community'}}</h2>
       {{#link 'community' class='community-link'}}
         {{t 'join_conversation'}}
       {{/link}}
-
       <div class="community-image"></div>
     </section>
-  {{/if}}
-  <section class="section home-section activity">
-    {{#if settings.show_recent_activity}}{{recent_activity}}{{/if}}
-  </section>
-</div>
+{{/if}}
+
+
+{{#if settings.show_recent_activity}}
+<section class="section home-section activity">{{recent_activity}}</section>
+{{/if}}
+
