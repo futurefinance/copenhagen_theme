@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [{
@@ -170,6 +170,19 @@
       "min": 12,
       "value": 70,
       "max": 200
+    }, {
+      "identifier": "promoted_heading",
+      "type": "text",
+      "description": "promoted_heading_description",
+      "label": "promoted_heading_title",
+      "value": ""
+    }, 
+    {
+      "identifier": "categories_heading",
+      "type": "text",
+      "description": "categories_heading_description",
+      "label": "categories_heading_title",
+      "value": ""
     }]
   }, {
     "label": "article_page_group_label",

@@ -8,7 +8,7 @@
 <section class="section knowledge-base">
 {{#if promoted_articles}}
   <section class="articles">
-    <h3 class="home-section-heading">Popular articles</h3>
+    <h3 class="home-section-heading">{{settings.promoted_heading}}</h3>
       <ul class="article-list promoted-articles">
       {{#each promoted_articles}}
       <li class="promoted-articles-item">
@@ -20,7 +20,7 @@
         </section>
       {{/if}}
     <section class="categories blocks">
-      <h3 class="home-section-heading">Another Title</h3>
+      <h3 class="home-section-heading">{{settings.categories_heading}}</h3>
       <ul class="blocks-list">
         {{#each categories}}
           {{#if ../has_multiple_categories}}
