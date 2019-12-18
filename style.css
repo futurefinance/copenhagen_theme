@@ -45,11 +45,11 @@ h4 {
 
 a {
   color: $link_color;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 input,
@@ -4397,6 +4397,14 @@ form.search input[type="search"] {
 .homepage-section p {
   line-height: 1.5;
   max-width: 666px;
+}
+
+.homepage-section p a:link,
+.homepage-section p a:visited,
+.homepage-section p a:focus,
+.homepage-section p a:hover,
+.homepage-section p a:active {
+  text-decoration: underline;
 }
 
 .homepage-section .container {
