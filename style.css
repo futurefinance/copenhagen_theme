@@ -4356,6 +4356,11 @@ body .navigation-main .dropdown-toggle::after {
   line-height: 1.2;
 }
 
+.home-content {
+  padding-left:  20px;
+  padding-right: 20px;
+}
+
 @media screen and (min-width: 1170px) {
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
@@ -4368,6 +4373,11 @@ body .navigation-main .dropdown-toggle::after {
   .home-section-heading {
     margin-bottom: 24px;
     font-size: 30px;
+  }
+
+  .home-content {
+    padding-left:  82px;
+    padding-right: 82px;
   }
 }
 

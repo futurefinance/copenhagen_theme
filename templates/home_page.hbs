@@ -5,7 +5,7 @@
   </div>
 </section>
 <div class="container">
-<section class="section knowledge-base">
+<section class="section knowledge-base home-content">
 {{#if promoted_articles}}
   <section class="articles">
     <h3 class="home-section-heading">{{settings.promoted_heading}}</h3>
@@ -22,22 +22,18 @@
     <section class="categories blocks">
       <h3 class="home-section-heading">{{settings.categories_heading}}</h3>
       <ul class="blocks-list">
-        {{#each categories}}
+        {{~#each categories~}}
           {{#if ../has_multiple_categories}}
             <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link">
-                <h4 class="blocks-item-title">{{name}}</h4>
-                {{#if description }}<p class="blocks-item-description">{{excerpt description}}</p>{{/if}}
+              <a href='{{url}}' class="blocks-item-link category-cta">
+                <span>{{name}}</span>
               </a>
             </li>
           {{else}}
             {{#each sections}}
               <li class="blocks-item">
                 <a href='{{url}}' class="blocks-item-link">
-                  <h4 class="blocks-item-title">
-                    {{name}}
-                  </h4>
-                  {{#if description }}<p class="blocks-item-description">{{excerpt description}}</p>{{/if}}
+                  <span>{{name}}</span>
                 </a>
               </li>
             {{/each}}
