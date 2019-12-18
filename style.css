@@ -4411,6 +4411,13 @@ form.search input[type="search"] {
   padding: 24px;
 }
 
+section.categories.homepage-section {
+  padding-top: 0;
+}
+
+.categories.homepage-section li.blocks-item:last-child {
+  margin-bottom: 0;
+}
 
 @media screen and (min-width: 1170px) {
   .hero .page-heading {
@@ -4428,5 +4435,9 @@ form.search input[type="search"] {
   .home-content, .homepage-section .container {
     padding-left:  82px;
     padding-right: 82px;
-  } 
+  }
+
+  .categories.homepage-section li.blocks-item {
+    margin-bottom: 0;
+  }
 }
