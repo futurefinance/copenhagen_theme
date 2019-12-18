@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.1.16",
+  "version": "2.1.17",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [{
@@ -182,6 +182,12 @@
       "type": "text",
       "description": "categories_heading_description",
       "label": "categories_heading_title",
+      "value": ""
+    },
+    {
+      "identifier": "paragraph_1_title",
+      "type": "text",
+      "label": "paragraph_1_title",
       "value": ""
     }]
   }, {
