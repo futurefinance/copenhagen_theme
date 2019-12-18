@@ -183,12 +183,6 @@
       "description": "categories_heading_description",
       "label": "categories_heading_title",
       "value": ""
-    },
-    {
-      "identifier": "paragraph_1_title",
-      "type": "text",
-      "label": "paragraph_1_title",
-      "value": ""
     }]
   }, {
     "label": "article_page_group_label",
