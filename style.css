@@ -4396,3 +4396,7 @@ body .navigation-main .dropdown-toggle::after {
   font-size: 18px; 
   text-transform: uppercase;
 }
+
+form.search input[type="search"] {
+  height: 54px;
+}
