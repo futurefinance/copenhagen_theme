@@ -4423,6 +4423,10 @@ section.categories.homepage-section .section-heading {
   margin-bottom: 0;
 }
 
+.section.hero {
+  margin-bottom: 24px;
+}
+
 @media screen and (min-width: 1170px) {
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
@@ -4444,4 +4448,5 @@ section.categories.homepage-section .section-heading {
   .categories.homepage-section li.blocks-item {
     margin-bottom: 0;
   }
+ 
 }
