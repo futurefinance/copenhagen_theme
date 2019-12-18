@@ -990,6 +990,7 @@ ul {
   display: block;
   padding: 15px 0;
   color: $text_color;
+  line-height: 1.5;
 }
 
 .promoted-articles-item .icon-lock::before {
