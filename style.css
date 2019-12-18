@@ -4386,7 +4386,11 @@ form.search input[type="search"] {
 }
 
 .homepage-section {
-  margin-bottom: 48px;
+  margin-bottom: 20px;
+}
+
+.home-section .section-heading {
+  margin-bottom: 24px;
 }
 
 .homepage-section p {
