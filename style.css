@@ -4389,12 +4389,12 @@ form.search input[type="search"] {
   margin-bottom: 48px;
 }
 
-.home-section p {
+.homepage-section p {
   line-height: 1.5;
   max-width: 666px;
 }
 
-.home-section .container {
+.homepage-section .container {
   padding: 24px;
 }
 
@@ -4417,7 +4417,7 @@ form.search input[type="search"] {
     padding-right: 82px;
   }
 
-  .home-section .container {
+  .homepage-section .container {
     padding: 48px;
   }
 }
