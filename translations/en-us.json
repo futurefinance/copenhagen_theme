@@ -67,5 +67,9 @@
   "main_page_heading_displayed_in_the_hero_section": "Main page heading displayed in the hero section",
   "page_main_title_size_mobile": "Main title font-size (mobile)",
   "page_main_title_size_desktop": "Main title font-size (desktop)",
-  "main_page_heading_size": "in pixels"
+  "main_page_heading_size": "in pixels",
+  "promoted_heading_description": "...",
+  "promoted_heading_title": "Heading for the promoted articles section",
+  "categories_heading_description": "...",
+  "categories_heading_title": "Heading for the categories section"
 }
