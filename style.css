@@ -4364,24 +4364,6 @@ body .navigation-main .dropdown-toggle::after {
   padding-right: 20px;
 }
 
-@media screen and (min-width: 1170px) {
-  .hero .page-heading {
-    font-size: #{$main_heading_size_desktop}px;
-    margin-bottom: 24px;
-  }
-  .promoted-articles-item a { 
-    padding: 0;
-  }
-  .home-section-heading {
-    margin-bottom: 24px;
-    font-size: 30px;
-  }
-
-  .home-content {
-    padding-left:  82px;
-    padding-right: 82px;
-  }
-}
 
 .site-header { 
   background-color: white;
@@ -4401,4 +4383,41 @@ form.search input[type="search"] {
   height: 54px;
   font-size: 18px; 
   font-family: inherit;
+}
+
+.homepage-section {
+  margin-bottom: 48px;
+}
+
+.home-section p {
+  line-height: 1.5;
+  max-width: 666px;
+}
+
+.home-section .container {
+  padding: 24px;
+}
+
+
+@media screen and (min-width: 1170px) {
+  .hero .page-heading {
+    font-size: #{$main_heading_size_desktop}px;
+    margin-bottom: 24px;
+  }
+  .promoted-articles-item a { 
+    padding: 0;
+  }
+  .home-section-heading {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .home-content {
+    padding-left:  82px;
+    padding-right: 82px;
+  }
+
+  .home-section .container {
+    padding: 48px;
+  }
 }
