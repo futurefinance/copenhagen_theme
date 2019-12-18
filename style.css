@@ -4417,12 +4417,9 @@ form.search input[type="search"] {
     font-size: 30px;
   }
 
-  .home-content {
+  .home-content, .homepage-section .container {
     padding-left:  82px;
     padding-right: 82px;
-  }
+  } 
 
-  .homepage-section .container {
-    padding: 48px;
-  }
 }
