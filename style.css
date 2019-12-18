@@ -4379,3 +4379,8 @@ body .navigation-main .dropdown-toggle::after {
   padding-top: 40px;
 }
 
+.category-cta {
+  font-weight: bold;
+  font-size: 18px; 
+  text-transform: uppercase;
+}
