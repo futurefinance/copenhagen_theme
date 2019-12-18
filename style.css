@@ -4348,6 +4348,7 @@ body .navigation-main .dropdown-toggle::after {
 .hero .page-heading {
   margin-bottom: 30px;
   font-size: #{$main_heading_size_mobile}px;
+  font-family: inherit;
 }
 
 .home-section-heading {
@@ -4364,7 +4365,7 @@ body .navigation-main .dropdown-toggle::after {
 @media screen and (min-width: 1170px) {
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
-    line-height 45px;
+    line-height: 45px;
     margin-bottom: 24px;
   }
   .promoted-articles-item a { 
