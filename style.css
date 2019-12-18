@@ -45,7 +45,7 @@ h4 {
 
 a {
   color: $link_color;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover, a:active, a:focus {
