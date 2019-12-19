@@ -1589,6 +1589,7 @@ ul {
 
 .sidenav-item {
   color: $text_color;
+  border-bottom: solid 1px transparent;
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
@@ -1596,7 +1597,7 @@ ul {
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  border-bottom: solid 1px #00AA50;
+  border-bottom-color: #00AA50;
   text-decoration: none;
 }
 
