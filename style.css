@@ -988,9 +988,17 @@ ul {
 
 .promoted-articles-item a {
   display: block;
-  padding: 15px 0;
+  padding: 12px 0;
   color: $text_color;
   line-height: 1.5;
+}
+
+.promoted-articles-item a:first-child {
+  padding-top: 0;
+}
+
+.promoted-articles-item a:last-child {
+  padding-bottom: 0;
 }
 
 .promoted-articles-item .icon-lock::before {
@@ -4428,13 +4436,19 @@ section.categories.homepage-section .section-heading {
 }
 
 @media screen and (min-width: 1170px) {
+  .hero {
+    height: 400px;
+  }
+  
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
     margin-bottom: 24px;
   }
+
   .promoted-articles-item a { 
     padding: 0;
   }
+  
   .home-section-heading {
     margin-bottom: 24px;
     font-size: 30px;
