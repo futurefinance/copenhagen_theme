@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log({collapsible});
   Array.prototype.forEach.call(collapsible, function(el) {
     var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
-    console.log({toggle, el})
+    console.log('TEST', {toggle, el});
     el.addEventListener('click', function(e) {
       toggleNavigation(toggle, this);
     });
