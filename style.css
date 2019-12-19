@@ -4499,3 +4499,18 @@ section.categories.homepage-section .section-heading {
 .collapsible-sidebar-body a {
   line-height: 24px;
 }
+
+.see-more {
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 21px;
+  position: relative;
+  text-decoration: none;
+  background-image: url('https://www.futurefinance.com/css/images/rebranded/ff-arrow-light-bg.svg');
+  background-position: right center;
+  background-size: 14px;
+  padding-right: 19px;
+  background-repeat: no-repeat;
+}
