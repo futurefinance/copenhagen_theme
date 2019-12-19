@@ -4514,3 +4514,9 @@ section.categories.homepage-section .section-heading {
   text-decoration: none;
   vertical-align: middle;
 }
+
+.spacer-bottom {
+  display: block;
+  height: 90px;
+  width: 100%;
+}
