@@ -4451,6 +4451,9 @@ section.categories.homepage-section .section-heading {
 }
 
 @media screen and (min-width: 1170px) {
+  .hero {
+    padding-bottom: 20px;
+  }
   
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
