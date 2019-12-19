@@ -993,11 +993,11 @@ ul {
   line-height: 1.5;
 }
 
-.promoted-articles-item a:first-child {
+.promoted-articles-item:first-child a {
   padding-top: 0;
 }
 
-.promoted-articles-item a:last-child {
+.promoted-articles-item:last-child a {
   padding-bottom: 0;
 }
 
