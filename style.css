@@ -4462,7 +4462,8 @@ section.categories.homepage-section .section-heading {
   .home-content,
   .homepage-section .container,
   .category-breadcrumbs,
-  .article-container {
+  .article-container, 
+  .search-results {
     padding-left:  82px;
     padding-right: 82px;
   }
@@ -4484,6 +4485,7 @@ section.categories.homepage-section .section-heading {
   font-weight: 700;
 }
 
-.search-results-list {
+.search-results-list,
+.collapsible-sidebar-body a {
   line-height: 24px;
 }
