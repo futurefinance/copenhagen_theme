@@ -4525,3 +4525,8 @@ section.categories.homepage-section .section-heading {
 .related-articles .related-articles-title {
   font-size: 16px;
 }
+
+.recent-articles a, 
+.related-articles a {
+  line-height: 24px;
+}
