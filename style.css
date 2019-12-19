@@ -1171,7 +1171,7 @@ ul {
   line-height: 1.17;
   font-size: 23px;
   font-weight: 600;
-  padding-bottom: 1em;
+  padding-bottom: 12px;
 }
 
 @media (min-width: 768px) {
