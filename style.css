@@ -4537,4 +4537,6 @@ section.categories.homepage-section .section-heading {
   border-bottom: solid 1px #B2B7BB;
 }
 
-.breadcrumbs
+zd-autocomplete a {
+ color: red !important;
+}
