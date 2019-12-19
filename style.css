@@ -1194,6 +1194,7 @@ ul {
 
 .article-list-item a {
   color: $text_color;
+  line-height: 24px;
 }
 
 .article-list-item .icon-lock::before {
@@ -4381,7 +4382,8 @@ body .navigation-main .dropdown-toggle::after {
   line-height: 1.2;
 }
 
-.home-content {
+.home-content,
+.category-breadcrumbs {
   padding-left:  20px;
   padding-right: 20px;
 }
@@ -4467,7 +4469,9 @@ section.categories.homepage-section .section-heading {
     font-size: 30px;
   }
 
-  .home-content, .homepage-section .container {
+  .home-content,
+  .homepage-section .container,
+  .category-breadcrumbs {
     padding-left:  82px;
     padding-right: 82px;
   }
