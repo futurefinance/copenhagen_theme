@@ -4461,7 +4461,8 @@ section.categories.homepage-section .section-heading {
 
   .home-content,
   .homepage-section .container,
-  .category-breadcrumbs {
+  .category-breadcrumbs,
+  .article-container {
     padding-left:  82px;
     padding-right: 82px;
   }
