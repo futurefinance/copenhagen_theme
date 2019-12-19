@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function toggleNavigation(toggle, menu) {
+    console.log('toggleNavigation', { toggle, menu });
     var isExpanded = menu.getAttribute('aria-expanded') === 'true';
     menu.setAttribute('aria-expanded', !isExpanded);
     toggle.setAttribute('aria-expanded', !isExpanded);
@@ -158,10 +159,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Toggles expanded aria to collapsible elements
   var collapsible = document.querySelectorAll('.collapsible-nav, .collapsible-sidebar');
-
+  console.log({collapsible});
   Array.prototype.forEach.call(collapsible, function(el) {
     var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
-
+    console.log({toggle, el})
     el.addEventListener('click', function(e) {
       toggleNavigation(toggle, this);
     });
