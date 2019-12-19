@@ -4405,8 +4405,9 @@ body .navigation-main .dropdown-toggle::after {
 
 form.search input[type="search"] {
   height: 54px;
-  font-size: 18px; 
+  display: block;
   font-family: inherit;
+  font-size: 18px; 
 }
 
 .homepage-section {
