@@ -686,7 +686,7 @@ ul {
 }
 
 .breadcrumbs li {
-  color: lighten($text_color, 20%);
+  color: #676F79;
   display: inline;
   font-weight: 300;
   font-size: 13px;
@@ -4537,3 +4537,4 @@ section.categories.homepage-section .section-heading {
   border-bottom: solid 1px #B2B7BB;
 }
 
+.breadcrumbs
