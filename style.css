@@ -772,10 +772,7 @@ ul {
 }
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
 }
 
 @media (min-width: 768px) {
