@@ -754,9 +754,12 @@ ul {
 
 /***** Hero component *****/
 .hero {
+  /*
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
+  */
+  background-color: $brand_color;
   height: 300px;
   padding: 0 20px;
   text-align: center;
@@ -4371,6 +4374,7 @@ body .navigation-main .dropdown-toggle::after {
   font-family: inherit;
   line-height: 0.8;
   text-transform: uppercase;
+  color: white;
 }
 
 .home-section-heading {
@@ -4447,9 +4451,6 @@ section.categories.homepage-section .section-heading {
 }
 
 @media screen and (min-width: 1170px) {
-  .hero {
-    height: 400px;
-  }
   
   .hero .page-heading {
     font-size: #{$main_heading_size_desktop}px;
