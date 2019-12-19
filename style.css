@@ -4483,3 +4483,7 @@ section.categories.homepage-section .section-heading {
   font-size: 16px;
   font-weight: 700;
 }
+
+.search-results-list {
+  line-height: 24px;
+}
