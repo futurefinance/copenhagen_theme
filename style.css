@@ -1594,6 +1594,7 @@ ul {
   font-weight: 300;
   margin-bottom: 10px;
   padding: 10px 0;
+  padding-right: 10px;
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
