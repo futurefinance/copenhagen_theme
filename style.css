@@ -1181,8 +1181,8 @@ ul {
 }
 
 .section-tree .see-all-articles {
-  display: block;
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .article-list-item {
@@ -4502,15 +4502,17 @@ section.categories.homepage-section .section-heading {
 
 .see-more {
   background-color: white;
+  background-image: url('https://www.futurefinance.com/css/images/rebranded/ff-arrow-light-bg.svg');
+  background-position: right center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  display: inline-block;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: -0.5px;
   line-height: 21px;
+  padding-right: 19px;
   position: relative;
   text-decoration: none;
-  background-image: url('https://www.futurefinance.com/css/images/rebranded/ff-arrow-light-bg.svg');
-  background-position: right center;
-  background-size: 14px;
-  padding-right: 19px;
-  background-repeat: no-repeat;
+  vertical-align: middle;
 }
