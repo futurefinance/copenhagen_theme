@@ -1204,6 +1204,7 @@ ul {
 .section-container {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 90px;
 }
 
 .section-content {
