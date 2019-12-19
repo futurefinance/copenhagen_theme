@@ -1597,7 +1597,6 @@ ul {
 
 .sidenav-item.current-article, .sidenav-item:hover {
   border-bottom: solid 1px #00AA50;
-  color: $brand_text_color;
   text-decoration: none;
 }
 
