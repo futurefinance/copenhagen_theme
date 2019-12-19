@@ -4382,8 +4382,7 @@ body .navigation-main .dropdown-toggle::after {
   line-height: 1.2;
 }
 
-.home-content,
-.category-breadcrumbs {
+.home-content {
   padding-left:  20px;
   padding-right: 20px;
 }
