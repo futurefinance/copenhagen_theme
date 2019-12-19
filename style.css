@@ -4520,3 +4520,8 @@ section.categories.homepage-section .section-heading {
   height: 90px;
   width: 100%;
 }
+
+.recent-articles .recent-articles-title,
+.related-articles .related-articles-title {
+  font-size: 16px;
+}
