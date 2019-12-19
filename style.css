@@ -4474,7 +4474,9 @@ section.categories.homepage-section .section-heading {
   .homepage-section .container,
   .category-breadcrumbs,
   .article-container, 
-  .search-results {
+  .search-results,
+  .category-container,
+  .section-container {
     padding-left:  82px;
     padding-right: 82px;
   }
@@ -4530,3 +4532,8 @@ section.categories.homepage-section .section-heading {
 .related-articles a {
   line-height: 24px;
 }
+
+.article-list-item {
+  border-bottom: solid 1px #B2B7BB;
+}
+
