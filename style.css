@@ -1596,7 +1596,7 @@ ul {
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  background-color: #b2b7bb;
+  border-bottom: solid 1px #00AA50;
   color: $brand_text_color;
   text-decoration: none;
 }
@@ -4535,8 +4535,4 @@ section.categories.homepage-section .section-heading {
 
 .article-list-item {
   border-bottom: solid 1px #B2B7BB;
-}
-
-zd-autocomplete a {
- color: red !important;
 }
