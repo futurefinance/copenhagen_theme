@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.1.79",
+  "version": "2.1.80",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [
@@ -413,6 +413,13 @@
     {
       "label": "config_group_label",
       "variables": [
+        {
+          "identifier": "base_url",
+          "type": "text",
+          "description": "base_url_description",
+          "label": "base_url_label",
+          "value": "https://www.futurefinance.com"
+        },
         {
           "identifier": "assets_url",
           "type": "text",

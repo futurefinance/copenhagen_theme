@@ -74,5 +74,7 @@
   "categories_heading_title": "Heading for the categories section",
   "config_group_label": "Config",
   "assets_url_description": "The url of assets server to use. Root domain without trailing slash (https://www.futurefinance.com)",
-  "assets_url_label": "Assets url"
+  "assets_url_label": "Assets url",
+  "base_url_description" : "Base website url (root) without trailing slash",
+  "base_url_title": "Base url"
 }
