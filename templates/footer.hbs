@@ -45,39 +45,35 @@
 <script src="{{settings.assets_url}}/scripts/zendesk.js"></script>
 
 <script>
-  /*
-  function toggleNavigation(toggle, menu) {
-    var isExpanded = menu.getAttribute('aria-expanded') === 'true';
-    const newAria = isExpanded ? 'false' : 'true';
-    console.log('toggleNavigation', { toggle, menu, isExpanded, newAria, aria: menu.getAttribute('aria-expanded') });
-    menu.setAttribute('aria-expanded', newAria);
-    toggle.setAttribute('aria-expanded', newAria);
-  }
-
-  function closeNavigation(toggle, menu) {
-    console.log('closeNavigation', { toggle, menu });
-    menu.setAttribute('aria-expanded', false);
-    toggle.setAttribute('aria-expanded', false);
-    toggle.focus();
-  }
-
-  // Toggles expanded aria to collapsible elements
-  var collapsible = document.querySelectorAll('.collapsible-nav, .collapsible-sidebar');
-  console.log({ collapsible });
-  Array.prototype.forEach.call(collapsible, function(el) {
-    var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
-      console.log({ el, toggle });
-    el.addEventListener('click', function(e) {
-      toggleNavigation(toggle, this);
-    });
-
-    el.addEventListener('keyup', function(e) {
-      if (e.keyCode === 27) { // Escape key
-        closeNavigation(toggle, this);
+  if(typeof toggleNavigation !== 'function' || typeof closeNavigation !== 'function' ) {
+      function toggleNavigation(toggle, menu) {
+        var isExpanded = menu.getAttribute('aria-expanded') === 'true';
+        const newAria = isExpanded ? 'false' : 'true';
+        menu.setAttribute('aria-expanded', newAria);
+        toggle.setAttribute('aria-expanded', newAria);
       }
+
+      function closeNavigation(toggle, menu) {
+        menu.setAttribute('aria-expanded', false);
+        toggle.setAttribute('aria-expanded', false);
+        toggle.focus();
+      }
+
+    // Toggles expanded aria to collapsible elements
+    var collapsible = document.querySelectorAll('.collapsible-nav, .collapsible-sidebar');
+    Array.prototype.forEach.call(collapsible, function(el) {
+      var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
+      el.addEventListener('click', function(e) {
+        toggleNavigation(toggle, this);
+      });
+
+      el.addEventListener('keyup', function(e) {
+        if (e.keyCode === 27) { // Escape key
+          closeNavigation(toggle, this);
+        }
+      });
     });
-  });
-  */
+  }
 
   function fixMobilLogin() {
     const mobileContainer = document.querySelector('.mobile-menu-container');
@@ -100,7 +96,7 @@
         if(!node) {
           continue;
         }
-        console.log({node});
+    
         if(node.classList && node.classList.contains('log-in')) {
           fixMobilLogin();
         }
