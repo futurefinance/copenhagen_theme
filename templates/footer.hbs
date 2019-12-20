@@ -59,8 +59,10 @@
 
   // Toggles expanded aria to collapsible elements
   var collapsible = document.querySelectorAll('.collapsible-nav, .collapsible-sidebar');
+  console.log({ collapsible });
   Array.prototype.forEach.call(collapsible, function(el) {
     var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
+      console.log({ el, toggle });
     el.addEventListener('click', function(e) {
       toggleNavigation(toggle, this);
     });
