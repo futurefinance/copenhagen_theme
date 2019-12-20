@@ -44,18 +44,29 @@
     });
   });
 
+  function fixMobilLogin() {
+    const mobileContainer = document.querySelector('.mobile-menu-container');
+    if(mobileContainer) {
+      const signInNav = mobileContainer.querySelector('.drop-down.fixed.log-in');
+      if(signInNav && !signInNav.classList.contains('open')) {
+        signInNav.classList.add('open');
+      }
+    }
+  }
 
-    var observer = new MutationObserver(function(mutations) {
+  var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (!mutation.addedNodes) return
 
       for (var i = 0; i < mutation.addedNodes.length; i++) {
         // do things to your newly added nodes here
         var node = mutation.addedNodes[i]
-        console.log(node.classList);
+        if(node.classList.contains('log-in')) {
+          fixMobilLogin();
+        }
       }
     })
-  })
+  });
 
   observer.observe(document.body, {
       childList: true
@@ -64,11 +75,5 @@
     , characterData: false
   })
 
-  const mobileContainer = document.querySelector('.mobile-menu-container');
-  if(mobileContainer) {
-    const signInNav = mobileContainer.querySelector('.drop-down.fixed.log-in');
-    if(signInNav && !signInNav.classList.contains('open')) {
-      signInNav.classList.add('open');
-    }
-  }
+
 </script>
