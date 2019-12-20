@@ -47,7 +47,7 @@
 <script>
   function toggleNavigation(toggle, menu) {
     var isExpanded = menu.getAttribute('aria-expanded') === 'true';
-    console.log('toggleNavigation', { toggle, menu });
+    console.log('toggleNavigation', { toggle, menu, isExpanded, aria: menu.getAttribute('aria-expanded') });
     menu.setAttribute('aria-expanded', !isExpanded);
     toggle.setAttribute('aria-expanded', !isExpanded);
   }
