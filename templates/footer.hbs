@@ -47,11 +47,13 @@
 <script>
   function toggleNavigation(toggle, menu) {
     var isExpanded = menu.getAttribute('aria-expanded') === 'true';
+    console.log('toggleNavigation', { toggle, menu });
     menu.setAttribute('aria-expanded', !isExpanded);
     toggle.setAttribute('aria-expanded', !isExpanded);
   }
 
   function closeNavigation(toggle, menu) {
+    console.log('closeNavigation', { toggle, menu });
     menu.setAttribute('aria-expanded', false);
     toggle.setAttribute('aria-expanded', false);
     toggle.focus();
