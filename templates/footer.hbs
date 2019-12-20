@@ -61,7 +61,11 @@
       for (var i = 0; i < mutation.addedNodes.length; i++) {
         // do things to your newly added nodes here
         var node = mutation.addedNodes[i]
-        if(node.classList.contains('log-in')) {
+        if(!node) {
+          continue;
+        }
+        
+        if(node.classList && node.classList.contains('log-in')) {
           fixMobilLogin();
         }
       }

@@ -409,6 +409,17 @@
           "value": true
         }
       ]
-    }
+    },
+    {
+      "label": "config_group_label",
+      "variables": [
+        {
+          "identifier": "assets_url",
+          "type": "text",
+          "description": "assets_url_description",
+          "label": "assets_url_label"
+        }
+      ]
+    },
   ]
 }

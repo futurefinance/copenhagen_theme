@@ -71,5 +71,8 @@
   "promoted_heading_description": "...",
   "promoted_heading_title": "Heading for the promoted articles section",
   "categories_heading_description": "...",
-  "categories_heading_title": "Heading for the categories section"
+  "categories_heading_title": "Heading for the categories section",
+  "config_group_label": "Config",
+  "assets_url_description": "The url of assets server to use. Root domain without trailing slash (https://www.futurefinance.com)",
+  "assets_url_label": "Assets url"
 }
