@@ -15,12 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // social share popups
-  Array.prototype.forEach.call(document.querySelectorAll('.share a'), function(anchor) {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.open(this.href, '', 'height = 500, width = 500');
+  var sharePopUps = document.querySelectorAll('.share a');
+
+  if(sharePopUps && sharePopUps.length) {
+    Array.prototype.forEach.call(sharePopUps, function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(this.href, '', 'height = 500, width = 500');
+      });
     });
-  });
+  }
 
   // In some cases we should preserve focus after page reload
   function saveFocus() {
@@ -106,13 +110,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Submit requests filter form on status or organization change in the request list page
-  Array.prototype.forEach.call(document.querySelectorAll('#request-status-select, #request-organization-select'), function(el) {
-    el.addEventListener('change', function(e) {
-      e.stopPropagation();
-      saveFocus();
-      closest(this, 'form').submit();
+  var requestFilters = document.querySelectorAll('#request-status-select, #request-organization-select');
+  if(requestFilters && requestFilters.length) {
+    Array.prototype.forEach.call(document.querySelectorAll('#request-status-select, #request-organization-select'), function(el) {
+      el.addEventListener('change', function(e) {
+        e.stopPropagation();
+        saveFocus();
+        closest(this, 'form').submit();
+      });
     });
-  });
+  }
 
   // Submit requests filter form on search in the request list page
   var quickSearch = document.querySelector('#quick-search');
@@ -153,28 +160,30 @@ document.addEventListener('DOMContentLoaded', function() {
         closeNavigation(burgerMenu, this);
       }
     });
-  }
-
-  if (userMenu.children.length === 0) {
-    burgerMenu.style.display = 'none';
+  
+    if (userMenu.children.length === 0) {
+      burgerMenu.style.display = 'none';
+    }
   }
 
   // Toggles expanded aria to collapsible elements
   var collapsible = document.querySelectorAll('.collapsible-nav, .collapsible-sidebar');
 
-  Array.prototype.forEach.call(collapsible, function(el) {
-    var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
+  if(collapsible && collapsible.length) {
+    Array.prototype.forEach.call(collapsible, function(el) {
+      var toggle = el.querySelector('.collapsible-nav-toggle, .collapsible-sidebar-toggle');
 
-    el.addEventListener('click', function(e) {
-      toggleNavigation(toggle, this);
-    });
+      el.addEventListener('click', function(e) {
+        toggleNavigation(toggle, this);
+      });
 
-    el.addEventListener('keyup', function(e) {
-      if (e.keyCode === 27) { // Escape key
-        closeNavigation(toggle, this);
-      }
+      el.addEventListener('keyup', function(e) {
+        if (e.keyCode === 27) { // Escape key
+          closeNavigation(toggle, this);
+        }
+      });
     });
-  });
+  }
 
   // Submit organization form in the request page
   var requestOrganisationSelect = document.querySelector('#request-organization select');
@@ -200,18 +209,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // If multibrand search has more than 5 help centers or categories collapse the list
   const multibrandFilterLists = document.querySelectorAll(".multibrand-filter-list");
-  Array.prototype.forEach.call(multibrandFilterLists, function(filter) {
-    if (filter.children.length > 6) {
-      // Display the show more button
-      var trigger = filter.querySelector(".see-all-filters");
-      trigger.setAttribute("aria-hidden", false);
+  if(multibrandFilterLists && multibrandFilterLists.length) {
+    Array.prototype.forEach.call(multibrandFilterLists, function(filter) {
+      if (filter.children.length > 6) {
+        // Display the show more button
+        var trigger = filter.querySelector(".see-all-filters");
+        trigger.setAttribute("aria-hidden", false);
 
-      // Add event handler for click
-      trigger.addEventListener("click", function(e) {
-        e.stopPropagation();
-        trigger.parentNode.removeChild(trigger);
-        filter.classList.remove("multibrand-filter-list--collapsed")
-      })
-    }
-  });
+        // Add event handler for click
+        trigger.addEventListener("click", function(e) {
+          e.stopPropagation();
+          trigger.parentNode.removeChild(trigger);
+          filter.classList.remove("multibrand-filter-list--collapsed")
+        })
+      }
+    });
+  }
+
 });
