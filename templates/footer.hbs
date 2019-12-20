@@ -47,7 +47,7 @@
 <script>
   function toggleNavigation(toggle, menu) {
     var isExpanded = menu.getAttribute('aria-expanded') === 'true';
-    console.log('toggleNavigation', { toggle, menu, isExpanded, aria: menu.getAttribute('aria-expanded') });
+    console.log('toggleNavigation', { toggle, menu, isExpanded, newAria: !isExpanded, aria: menu.getAttribute('aria-expanded') });
     menu.setAttribute('aria-expanded', !isExpanded);
     toggle.setAttribute('aria-expanded', !isExpanded);
   }
@@ -92,11 +92,12 @@
 
       for (var i = 0; i < mutation.addedNodes.length; i++) {
         // do things to your newly added nodes here
+        
         var node = mutation.addedNodes[i]
         if(!node) {
           continue;
         }
-        
+        console.log({node});
         if(node.classList && node.classList.contains('log-in')) {
           fixMobilLogin();
         }
