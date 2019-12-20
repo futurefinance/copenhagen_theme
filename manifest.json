@@ -417,7 +417,8 @@
           "identifier": "assets_url",
           "type": "text",
           "description": "assets_url_description",
-          "label": "assets_url_label"
+          "label": "assets_url_label",
+          "value": "https://www.futurefinance.com"
         }
       ]
     }
