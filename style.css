@@ -4373,7 +4373,7 @@ body .navigation-main .dropdown-toggle::after {
   margin-bottom: 30px;
   font-size: #{$main_heading_size_mobile}px;
   font-family: inherit;
-  line-height: 1.37;
+  line-height: 0.84;
   text-transform: uppercase;
   color: white;
   text-align: left;
