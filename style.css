@@ -4382,7 +4382,7 @@ body .navigation-main .dropdown-toggle::after {
 
 @media (min-width: 768px) {
   .hero .page-heading {
-    text-align: cemter;
+    text-align: center;
   }
 }
 
