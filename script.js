@@ -139,18 +139,21 @@ document.addEventListener('DOMContentLoaded', function() {
   var burgerMenu = document.querySelector('.header .menu-button');
   var userMenu = document.querySelector('#user-nav');
 
-  burgerMenu.addEventListener('click', function(e) {
-    e.stopPropagation();
-    toggleNavigation(this, userMenu);
-  });
-
-
-  userMenu.addEventListener('keyup', function(e) {
-    if (e.keyCode === 27) { // Escape key
+  if(burgerMenu) {
+    burgerMenu.addEventListener('click', function(e) {
       e.stopPropagation();
-      closeNavigation(burgerMenu, this);
-    }
-  });
+      toggleNavigation(this, userMenu);
+    });
+  }
+
+  if(userMenu) {
+    userMenu.addEventListener('keyup', function(e) {
+      if (e.keyCode === 27) { // Escape key
+        e.stopPropagation();
+        closeNavigation(burgerMenu, this);
+      }
+    });
+  }
 
   if (userMenu.children.length === 0) {
     burgerMenu.style.display = 'none';
