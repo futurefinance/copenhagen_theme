@@ -4377,11 +4377,14 @@ body .navigation-main .dropdown-toggle::after {
   text-transform: uppercase;
   color: white;
   text-align: left;
-  @media (min-width: 768px) {
+  
+}
+
+@media (min-width: 768px) {
+  .hero .page-heading {
     text-align: cemter;
   }
 }
-
 
 .home-section-heading {
   margin-bottom: 24px;
