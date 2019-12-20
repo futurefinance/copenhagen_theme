@@ -43,4 +43,12 @@
       }
     });
   });
+
+  const mobileContainer = document.querySelector('.mobile-menu-container');
+  if(mobileContainer) {
+    const signInNav = mobileContainer.querySelector('.drop-down.fixed.log-in');
+    if(signInNav && !signInNav.classList.contains('open')) {
+      signInNav.classList.add('open');
+    }
+  }
 </script>
